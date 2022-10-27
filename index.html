@@ -168,55 +168,60 @@
                         <img src="imgs/rocket.png" alt="rocket_contact" />
                     </a>
                 </div>
-                <form method="post">
-                    <h3 class="my-4 text-weight-bold">Déjanos un mensaje</h3>
+                <h3 class="my-4 text-weight-bold">Déjanos un mensaje</h3>
+                <form action="http://127.0.0.1:8080/messages/" method="POST">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input
                                     type="text"
-                                    name="txtName"
+                                    name="name"
                                     class="form-control"
                                     placeholder="Tu Nombre..."
                                     value="name"
+                                    id="name"
                                 />
                             </div>
                             <div class="form-group">
                                 <input
-                                    type="text"
-                                    name="txtEmail"
+                                    type="email"
+                                    name="email"
                                     class="form-control"
                                     placeholder="Tu Email..."
                                     value="email"
+                                    id="email"
                                 />
                             </div>
                             <div class="form-group">
                                 <input
-                                    type="text"
-                                    name="txtPhone"
+                                    type="phone"
+                                    name="phone"
                                     class="form-control"
                                     placeholder="Tu Teléfono..."
                                     value="phone"
+                                    id="phone"
                                 />
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <textarea
-                                    name="txtMsg"
+                                    name="message"
                                     class="form-control"
                                     placeholder="Tu Mensaje..."
                                     style="width: 100%; height: 150px"
+                                    value="message"
+                                    id="message"
                                 ></textarea>
                             </div>
                         </div>
                         <div class="ml-3 form-group">
-                            <input
-                                type="submit"
-                                name="btnSubmit"
+                            <button
                                 class="btn btn-secondary"
-                                value="Enviar Mensaje"
-                            />
+                                value="post message"
+                            >
+                                Enviar
+                            </button>
                         </div>
                     </div>
                 </form>
