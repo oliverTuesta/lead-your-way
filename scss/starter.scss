@@ -124,3 +124,16 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    // space between letters
+    letter-spacing: 0.4rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
